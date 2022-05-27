@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>MINMAX</title>
+</head>
+<body>
+    <script>
+        var bil = [ 6, 3, 5, 2, 9, 8, 1, 12 ];
+			var nilaimin = bil[0];
+			var nilaimax = bil[0];
+
+				for (var i in bil) {
+					if (bil[i] < nilaimin) {
+						nilaimin = bil[i]
+					}
+				}
+	
+				for (var i in bil) {
+					if (bil[i] > nilaimax) {
+						nilaimax = bil[i];
+					}
+				}
+                document.write('Nilai Terendah = ' +nilaimin);
+					document.write("</br>")
+			document.write('Nilai Tertinggi = ' +nilaimax);
+        </script>
+</body>
+</html>
